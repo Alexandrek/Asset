@@ -141,8 +141,6 @@ Function Collect-SwitchConfig{
                         $wshell.SendKeys("{ENTER}") 
                         
                     }       
-            
-
 
                 ##Check if comaprison needed
                     If (Get-ChildItem -Path $ConfigDirectory -Filter "$Switch*Live*" | Test-Path ){
@@ -151,7 +149,6 @@ Function Collect-SwitchConfig{
                         $Live = Get-Content $Latest.FullName
                         $PresentOutput = Get-Content $LogPath
        
-        
                     
                         If(Compare-Object -ReferenceObject $Live -DifferenceObject $PresentOutput){ ##Files are different
 
