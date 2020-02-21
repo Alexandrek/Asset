@@ -53,7 +53,7 @@
         
 #>
 
-#Requires -module Posh-SSH -version 1.7.7
+#Requires -Modules @{ ModuleName="Posh-SSH"; RequiredVersion="1.7.7" }
 
 
 Function Collect-SwitchConfig{
